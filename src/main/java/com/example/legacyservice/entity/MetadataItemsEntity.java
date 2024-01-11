@@ -3,6 +3,7 @@ package com.example.legacyservice.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -11,6 +12,7 @@ import java.util.Set;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name="metadata_items")
 public class MetadataItemsEntity {
@@ -153,9 +155,4 @@ public class MetadataItemsEntity {
     @Column(name = "resources_changed_at")
     private Integer resourcesChangedAt;
 
-//    @OneToMany(fetch = FetchType.EAGER)
-//    @JoinColumn(name = "metadata_item_id")
-//    private Set<MediaItems> mediaItems;
-
-    protected MetadataItemsEntity() {}
 }

@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name="media_items")
 public class MediaItemsEntity {
@@ -114,5 +116,4 @@ public class MediaItemsEntity {
     @Column(name = "ends_at")
     private LocalDateTime endsAt;
 
-    protected MediaItemsEntity() {}
 }

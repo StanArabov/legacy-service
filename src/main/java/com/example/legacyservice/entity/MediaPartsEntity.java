@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "media_parts")
 public class MediaPartsEntity {
@@ -32,7 +34,7 @@ public class MediaPartsEntity {
     @Column(name = "open_subtitle_hash")
     private String openSubtitleHash;
 
-    @Column(name = "\"file\"")
+    @Column(name = "file")
     private String file;
 
     @Column(name = "\"index\"")
@@ -57,5 +59,4 @@ public class MediaPartsEntity {
     @Column(name = "extra_data")
     private String extraData;
 
-    protected MediaPartsEntity() {}
 }

@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "media_streams")
 public class MediaStreamsEntity {
@@ -65,5 +67,4 @@ public class MediaStreamsEntity {
     @Column(name = "extraData")
     private String extraData;
 
-    protected MediaStreamsEntity() {}
 }
