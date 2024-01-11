@@ -7,3 +7,10 @@ spring:
     username: stanislav
     password: test123
     virtual-host: plex_virtual_host
+  datasource:
+    url: jdbc:sqlite:/Users/stanislavarabov/Downloads/5.db
+    driverClassName: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      show-sql: true
+      database-platform: org.hibernate.community.dialect.SQLiteDialect
