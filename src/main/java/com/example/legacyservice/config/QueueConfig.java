@@ -9,5 +9,5 @@ public class QueueConfig {
     @Bean
     public Queue hello() {
         return new Queue("plex-queue");
-    }
+    } //todo move the name of the queue
 }
