@@ -2,7 +2,7 @@ package com.example.legacyservice.projection;
 
 import java.time.LocalDateTime;
 
-public interface MovieProjection {
+public interface MediaTypeProjection {
 
     Integer getMetadataId();
 
